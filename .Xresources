@@ -1,0 +1,77 @@
+! Zenburn color-scheme
+URxvt.background              :#1f1f1f
+URxvt.foreground              :#dcdccc
+
+! black + red
+!URxvt.color0                 :#3f3f3f
+URxvt.color0                  :#1f1f1f
+URxvt.color1                  :#705050
+
+! green + yellow
+URxvt.color2                  :#60b48a
+URxvt.color3                  :#dfaf8f
+
+! blue + purple
+URxvt.color4                  :#506070
+URxvt.color5                  :#dc8cc3
+
+! cyan + white
+URxvt.color6                  :#8cd0d3
+URxvt.color7                  :#dcdccc
+
+! bright-black + bright-red
+URxvt.color8                  :#709080
+URxvt.color9                  :#dca3a3
+
+! bright-green + bright-yellow
+URxvt.color10                 :#c3bf9f
+URxvt.color11                 :#f0dfaf
+
+! bright-blue + bright-purple
+URxvt.color12                 :#94bff3
+URxvt.color13                 :#ec93d3
+
+! bright-cyan + bright-white
+URxvt.color14                 :#93e0e3
+URxvt.color15                 :#ffffff
+
+URxvt.letterSpace: -1
+
+URxvt.font: xft:DejaVu\ Sans\ Mono\ for\ Powerline:pixelsize=12,xft:PowerlineSymbols
+URxvt.boldFont:xft:DejaVu\ Sans\ Mono\ for\ Powerline:pixelsize=12,xft:PowerlineSymbols
+URxvt.italicFont:xft:DejaVu\ Sans\ Mono\ for\ Powerline:pixelsize=12,xft:PowerlineSymbols 
+Uxvt.boldItalicFont:xft:DejaVu\ Sans\ Mono\ for\ Powerline:pixelsize=12,xft:PowerlineSymbols
+!URxvt.font: xft:inconsolata:pixelsize=13,style=regular
+!URxvt.boldFont: xft:inconsolata:pixelsize=13,style=bold
+!URxvt.italicFont: xft:inconsolata:pixelsize=13,style=bold
+!Uxvt.boldItalicFont: xft:inconsolata:pixelsize=13,style=bold
+ 
+ 
+URxvt.urlLauncher:      /usr/bin/chromium
+URxvt.matcher.button:   1
+ 
+!urxvt scrolling options and cursor style:
+ 
+URxvt*saveLines: 12000
+URxvt*scrollstyle:plain
+URxvt*scrollBar: false
+!URxvt*cursorUnderline: true
+URxvt*cursorColor: #d78700
+
+Xft.antialias: true
+Xft.hinting: trueprintf '\33]50;%s\007' "xft:inconsolata:pixelsize=20"
+Xft.hintstyle: hintfull
+Xft.dpi: 96
+Xft.rgba: rgb
+
+ 
+*internalBorder: 10
+
+URxvt.perl-ext-common:  ...,font-size
+
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
