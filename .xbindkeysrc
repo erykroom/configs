@@ -1,0 +1,84 @@
+
+#increase brightness
+"xbacklight -inc 10"
+   m:0x0 + c:233
+   XF86MonBrightnessUp
+
+#decrease brightness
+"xbacklight -dec 10"
+   m:0x0 + c:232
+   XF86MonBrightnessDown
+    
+#increase volume
+"amixer -D pulse sset Master 5%+"
+   m:0x0 + c:123
+   XF86AudioRaiseVolume
+
+
+#decrase volume
+"amixer -D pulse sset Master 5%-"
+   m:0x0 + c:122
+   XF86AudioLowerVolume
+
+   
+# Toggle mute
+"amixer -D pulse sset Master toggle"
+   m:0x0 + c:121
+   XF86AudioMute
+
+#Filemanager fn + f12
+    "Thunar"
+    m:0x0 + c:152
+    XF86Explorer
+
+#Browser fn + f10
+"chromium"
+    m:0x0 + c:225
+    XF86Search
+
+#Browser fn + f10
+"thunderbird"
+     m:0x0 + c:128
+    XF86Launch 
+##################################
+
+#play/pause
+"mpc toggle"
+   Control+Alt + Down
+
+#play/pause (XF86)
+"mpc toggle"
+   XF86AudioPlay
+
+#stop
+"mpc stop"
+   Control+Alt + Up
+
+#forward
+"mpc next"
+   Control+Alt + Right
+
+#forward (XF86)
+"mpc next"
+   XF86AudioNext
+
+#previous
+"mpc prev"
+   Control+Alt + Left
+
+#previous (XF86)
+"mpc prev"
+   XF86AudioPrev
+
+#htop
+"urxvtc -e htop"
+   Control+Alt + Delete
+
+#rewind
+"mpc seek -00:00:01"
+   Shift + Left
+
+#fast_forward
+"mpc seek +00:00:01"
+   Shift + Right
+
